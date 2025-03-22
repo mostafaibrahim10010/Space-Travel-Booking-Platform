@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai to the Stars - Space Travel Booking Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/1920x1080.jpg" alt="Dubai to the Stars Logo">
+            <h1>Dubai to the Stars</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#accommodations">Accommodations</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Journey Beyond Earth">Journey Beyond Earth</h1>
+            <p>Experience the future of travel with Dubai's premier space tourism platform</p>
+            <div class="cta-buttons">
+                <button class="primary-btn">Book Your Journey</button>
+                <button class="secondary-btn">Explore Destinations</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/space-shuttle.png" alt="Space Shuttle">
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations">
+        <div class="section-header">
+            <h2>Popular Destinations</h2>
+            <p>Discover the wonders of space with our most sought-after destinations</p>
+        </div>
+        <div class="destination-cards">
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="images/lunar-hotel.jpg" alt="Lunar Hotel">
+                    <div class="destination-tag">Most Popular</div>
+                </div>
+                <div class="card-content">
+                    <h3>Lunar Grand Hotel</h3>
+                    <div class="destination-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Moon</p>
+                        <p><i class="fas fa-clock"></i> 3 Days Journey</p>
+                    </div>
+                    <p class="description">Experience luxury accommodations with Earth views and low-gravity recreation areas.</p>
+                    <div class="price-book">
+                        <p class="price">From <span>$1,250,000</span></p>
+                        <button class="book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="images/orbital-station.jpg" alt="Orbital Station">
+                    <div class="destination-tag">New</div>
+                </div>
+                <div class="card-content">
+                    <h3>Dubai Orbital Station</h3>
+                    <div class="destination-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Earth Orbit</p>
+                        <p><i class="fas fa-clock"></i> 1 Day Journey</p>
+                    </div>
+                    <p class="description">Our newest facility featuring zero-gravity suites and panoramic observation decks.</p>
+                    <div class="price-book">
+                        <p class="price">From <span>$750,000</span></p>
+                        <button class="book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="images/mars-base.jpg" alt="Mars Base">
+                    <div class="destination-tag">Adventure</div>
+                </div>
+                <div class="card-content">
+                    <h3>Mars Pioneer Base</h3>
+                    <div class="destination-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Mars</p>
+                        <p><i class="fas fa-clock"></i> 7 Days Journey</p>
+                    </div>
+                    <p class="description">For the adventurous travelers, experience the red planet with guided excursions.</p>
+                    <div class="price-book">
+                        <p class="price">From <span>$2,500,000</span></p>
+                        <button class="book-now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <button class="view-all-btn">View All Destinations</button>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="section-header">
+            <h2>Book Your Space Journey</h2>
+            <p>Select your preferences and embark on the adventure of a lifetime</p>
+        </div>
+        <div class="booking-container">
+            <div class="booking-form">
+                <form id="space-booking-form">
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <select id="destination" required>
+                            <option value="" disabled selected>Select your destination</option>
+                            <option value="lunar-hotel">Lunar Grand Hotel</option>
+                            <option value="orbital-station">Dubai Orbital Station</option>
+                            <option value="mars-base">Mars Pioneer Base</option>
+                            <option value="asteroid-belt">Asteroid Belt Tour</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="departure-date">Departure Date</label>
+                            <input type="date" id="departure-date" required min="2023-01-01">
+                        </div>
+                        <div class="form-group">
+                            <label for="return-date">Return Date</label>
+                            <input type="date" id="return-date" required min="2023-01-01">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="travelers">Number of Travelers</label>
+                        <input type="number" id="travelers" min="1" max="10" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Travel Class</label>
+                        <select id="class" required>
+                            <option value="" disabled selected>Select your class</option>
+                            <option value="economy">Economy Shuttle</option>
+                            <option value="business">Business Class</option>
+                            <option value="luxury">Luxury Cabin</option>
+                            <option value="vip">VIP Zero-Gravity Experience</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="accommodation">Accommodation Preference</label>
+                        <select id="accommodation" required>
+                            <option value="" disabled selected>Select accommodation type</option>
+                            <option value="standard">Standard Room</option>
+                            <option value="deluxe">Deluxe Suite</option>
+                            <option value="premium">Premium Zero-G Suite</option>
+                            <option value="presidential">Presidential Space Suite</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-btn">Search Available Flights</button>
+                </form>
+            </div>
+            <div class="booking-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Next Launch</h3>
+                    <div class="countdown" id="launch-countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                    <p>Dubai to Lunar Grand Hotel</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3>Travel Requirements</h3>
+                    <ul class="requirements-list">
+                        <li>Medical clearance certificate</li>
+                        <li>Zero-gravity training (2 days)</li>
+                        <li>Space travel insurance</li>
+                        <li>Valid international passport</li>
+                    </ul>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="section-header">
+            <h2>Travel Packages</h2>
+            <p>Choose from our carefully curated space travel experiences</p>
+        </div>
+        <div class="package-tabs">
+            <button class="tab-btn active" data-tab="all">All Packages</button>
+            <button class="tab-btn" data-tab="family">Family</button>
+            <button class="tab-btn" data-tab="luxury">Luxury</button>
+            <button class="tab-btn" data-tab="adventure">Adventure</button>
+            <button class="tab-btn" data-tab="scientific">Scientific</button>
+        </div>
+        <div class="package-cards">
+            <div class="package-card" data-category="luxury">
+                <div class="package-badge">Premium</div>
+                <h3>Lunar Luxury Escape</h3>
+                <div class="package-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(128 reviews)</span>
+                </div>
+                <div class="package-details">
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>7 Days</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-user-friends"></i>
+                        <span>2 Travelers</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-hotel"></i>
+                        <span>Luxury Suite</span>
+                    </div>
+                </div>
+                <div class="package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Private shuttle transportation</li>
+                        <li><i class="fas fa-check"></i> Lunar surface excursion</li>
+                        <li><i class="fas fa-check"></i> Zero-gravity spa treatment</li>
+                        <li><i class="fas fa-check"></i> Gourmet dining experience</li>
+                    </ul>
+                </div>
+                <div class="package-price">
+                    <p class="price">$3,500,000 <span>per person</span></p>
+                    <button class="book-package">Book This Package</button>
+                </div>
+            </div>
+            <div class="package-card" data-category="family">
+                <div class="package-badge">Popular</div>
+                <h3>Family Orbital Adventure</h3>
+                <div class="package-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(94 reviews)</span>
+                </div>
+                <div class="package-details">
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>3 Days</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-user-friends"></i>
+                        <span>4 Travelers</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-hotel"></i>
+                        <span>Family Suite</span>
+                    </div>
+                </div>
+                <div class="package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Family shuttle transportation</li>
+                        <li><i class="fas fa-check"></i> Educational space workshops</li>
+                        <li><i class="fas fa-check"></i> Zero-gravity playground</li>
+                        <li><i class="fas fa-check"></i> Family-friendly meals</li>
+                    </ul>
+                </div>
+                <div class="package-price">
+                    <p class="price">$2,200,000 <span>per family</span></p>
+                    <button class="book-package">Book This Package</button>
+                </div>
+            </div>
+            <div class="package-card" data-category="adventure">
+                <div class="package-badge">Adventure</div>
+                <h3>Mars Expedition</h3>
+                <div class="package-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(76 reviews)</span>
+                </div>
+                <div class="package-details">
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>14 Days</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-user-friends"></i>
+                        <span>1 Traveler</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-hotel"></i>
+                        <span>Adventure Pod</span>
+                    </div>
+                </div>
+                <div class="package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Mars rover expedition</li>
+                        <li><i class="fas fa-check"></i> Red planet hiking</li>
+                        <li><i class="fas fa-check"></i> Olympus Mons climb</li>
+                        <li><i class="fas fa-check"></i> Survival training included</li>
+                    </ul>
+                </div>
+                <div class="package-price">
+                    <p class="price">$4,800,000 <span>per person</span></p>
+                    <button class="book-package">Book This Package</button>
+                </div>
+            </div>
+            <div class="package-card" data-category="scientific">
+                <div class="package-badge">Research</div>
+                <h3>Orbital Research Stay</h3>
+                <div class="package-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(42 reviews)</span>
+                </div>
+                <div class="package-details">
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>30 Days</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-user-friends"></i>
+                        <span>1 Traveler</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-hotel"></i>
+                        <span>Research Module</span>
+                    </div>
+                </div>
+                <div class="package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Access to research facilities</li>
+                        <li><i class="fas fa-check"></i> Collaboration with scientists</li>
+                        <li><i class="fas fa-check"></i> Experiment opportunities</li>
+                        <li><i class="fas fa-check"></i> Data analysis support</li>
+                    </ul>
+                </div>
+                <div class="package-price">
+                    <p class="price">$5,500,000 <span>per person</span></p>
+                    <button class="book-package">Book This Package</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations Section -->
+    <section id="accommodations" class="accommodations">
+        <div class="section-header">
+            <h2>Space Accommodations</h2>
+            <p>Experience luxury and comfort beyond Earth with our state-of-the-art space accommodations</p>
+        </div>
+        <div class="accommodation-slider">
+            <div class="accommodation-slide">
+                <div class="accommodation-image">
+                    <img src="images/lunar-suite.jpg" alt="Lunar Suite">
+                </div>
+                <div class="accommodation-info">
+                    <h3>Lunar Grand Suite</h3>
+                    <div class="accommodation-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="accommodation-features">
+                        <div class="feature">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>75 sq. meters</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>King Size Anti-Gravity Bed</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-globe"></i>
+                            <span>Earth View Window</span>
+                        </div>
+                    </div>
+                    <p class="accommodation-description">Our premium lunar accommodation featuring panoramic Earth views, private low-gravity recreation area, and luxurious amenities designed for the discerning space traveler.</p>
+                    <div class="accommodation-price">
+                        <p>From <span>$350,000</span> per night</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="accommodation-slide">
+                <div class="accommodation-image">
+                    <img src="images/orbital-pod.jpg" alt="Orbital Pod">
+                </div>
+                <div class="accommodation-info">
+                    <h3>Orbital Zero-G Pod</h3>
+                    <div class="accommodation-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="accommodation-features">
+                        <div class="feature">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>45 sq. meters</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>Floating Sleep System</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-window-maximize"></i>
+                            <span>360° Space View</span>
+                        </div>
+                    </div>
+                    <p class="accommodation-description">Experience the ultimate zero-gravity lifestyle in our orbital pods, complete with 360-degree views of space, adaptive environments, and cutting-edge comfort technology.</p>
+                    <div class="accommodation-price">
+                        <p>From <span>$250,000</span> per night</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="accommodation-slide">
+                <div class="accommodation-image">
+                    <img src="images/mars-habitat.jpg" alt="Mars Habitat">
+                </div>
+                <div class="accommodation-info">
+                    <h3>Mars Pioneer Habitat</h3>
+                    <div class="accommodation-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="accommodation-features">
+                        <div class="feature">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>60 sq. meters</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>Adaptive Comfort Bed</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mountain"></i>
+                            <span>Mars Landscape View</span>
+                        </div>
+                    </div>
+                    <p class="accommodation-description">Our Mars habitats offer the perfect blend of adventure and comfort, with reinforced structures, Martian view ports, and all the amenities needed for an extended stay on the red planet.</p>
+                    <div class="accommodation-price">
+                        <p>From <span>$400,000</span> per night</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accommodation-nav">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="nav-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About Dubai to the Stars</h2>
+            <p>Pioneering the future of space tourism since 2030</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/STFC-041021-EuropeFromSpace-GettyImages-1284041267.jpg" alt="Space Shuttle">
+            </div>
+            <div class="about-text">
+                <h3>Our Vision</h3>
+                <p>Dubai to the Stars was founded with a singular vision: to make space travel accessible, safe, and luxurious for civilians. As the UAE's premier space tourism company, we leverage decades of aerospace innovation and Dubai's legacy of turning ambitious dreams into reality.</p>
+                
+                <h3>Our Journey</h3>
+                <p>What began as a bold initiative by the UAE Space Agency has evolved into the world's leading commercial space travel enterprise. Our fleet of spacecraft combines cutting-edge technology with unparalleled comfort, while our orbital and planetary accommodations redefine luxury beyond Earth.</p>
+                
+                <h3>Safety & Innovation</h3>
+                <p>Safety is at the core of everything we do. Our vessels and habitats undergo rigorous testing and exceed all international space safety standards. We continuously push the boundaries of what's possible in space tourism, investing heavily in research and development to enhance the space travel experience.</p>
+                
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <p>Successful Missions</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1,500+</span>
+                        <p>Space Tourists</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <p>Safety Incidents</p>
+                    </div>
+                </div>
+                
+                <button class="learn-more-btn">Learn More About Our Story</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Dubai to the Stars Logo">
+                <h3>Dubai to the Stars</h3>
+                <p>Your journey beyond Earth begins here</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#accommodations">Accommodations</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Safety Measures</a></li>
+                        <li><a href="#">Training Process</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Liability Waiver</a></li>
+                        <li><a href="#">Space Travel Regulations</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dubai Space Center, Sheikh Zayed Road, Dubai, UAE</p>
+                <p><i class="fas fa-phone"></i> +971 800 SPACE (77223)</p>
+                <p><i class="fas fa-envelope"></i> info@dubaitothestars.ae</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2030 Dubai to the Stars. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

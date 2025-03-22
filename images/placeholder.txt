@@ -1,0 +1,13 @@
+This is a placeholder file for the images directory.
+
+The following images are referenced in the HTML and should be added to this directory:
+- logo.png
+- space-shuttle.png
+- stars.png
+- twinkling.png
+- lunar-hotel.jpg
+- orbital-station.jpg
+- mars-base.jpg
+- accommodation images (to be added)
+
+Please add appropriate space-themed images to complete the website design.
