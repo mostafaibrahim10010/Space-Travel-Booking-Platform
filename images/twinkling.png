@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="transparent"/>
+  <g fill="#ffffff">
+    <!-- Twinkling stars with different opacities -->
+    <circle cx="50" cy="50" r="1.5" opacity="0.8"/>
+    <circle cx="120" cy="80" r="2" opacity="0.6"/>
+    <circle cx="200" cy="30" r="1" opacity="0.9"/>
+    <circle cx="280" cy="90" r="1.5" opacity="0.7"/>
+    <circle cx="350" cy="40" r="2" opacity="0.5"/>
+    <circle cx="420" cy="70" r="1" opacity="0.8"/>
+    
+    <circle cx="80" cy="150" r="1.5" opacity="0.6"/>
+    <circle cx="160" cy="120" r="2" opacity="0.9"/>
+    <circle cx="240" cy="180" r="1" opacity="0.7"/>
+    <circle cx="320" cy="130" r="1.5" opacity="0.5"/>
+    <circle cx="400" cy="170" r="2" opacity="0.8"/>
+    
+    <circle cx="30" cy="220" r="1" opacity="0.9"/>
+    <circle cx="100" cy="270" r="1.5" opacity="0.7"/>
+    <circle cx="180" cy="230" r="2" opacity="0.5"/>
+    <circle cx="260" cy="280" r="1" opacity="0.8"/>
+    <circle cx="340" cy="240" r="1.5" opacity="0.6"/>
+    <circle cx="420" cy="290" r="2" opacity="0.9"/>
+    
+    <circle cx="60" cy="330" r="1.5" opacity="0.5"/>
+    <circle cx="140" cy="380" r="2" opacity="0.8"/>
+    <circle cx="220" cy="340" r="1" opacity="0.6"/>
+    <circle cx="300" cy="390" r="1.5" opacity="0.9"/>
+    <circle cx="380" cy="350" r="2" opacity="0.7"/>
+    <circle cx="460" cy="400" r="1" opacity="0.5"/>
+    
+    <circle cx="40" cy="450" r="1" opacity="0.8"/>
+    <circle cx="120" cy="420" r="1.5" opacity="0.6"/>
+    <circle cx="200" cy="470" r="2" opacity="0.9"/>
+    <circle cx="280" cy="430" r="1" opacity="0.7"/>
+    <circle cx="360" cy="480" r="1.5" opacity="0.5"/>
+    <circle cx="440" cy="440" r="2" opacity="0.8"/>
+    
+    <!-- Larger twinkling stars -->
+    <circle cx="75" cy="75" r="3" opacity="0.4"/>
+    <circle cx="175" cy="175" r="2.5" opacity="0.3"/>
+    <circle cx="275" cy="75" r="3" opacity="0.4"/>
+    <circle cx="375" cy="175" r="2.5" opacity="0.3"/>
+    <circle cx="75" cy="275" r="3" opacity="0.4"/>
+    <circle cx="175" cy="375" r="2.5" opacity="0.3"/>
+    <circle cx="275" cy="275" r="3" opacity="0.4"/>
+    <circle cx="375" cy="375" r="2.5" opacity="0.3"/>
+  </g>
+</svg>
